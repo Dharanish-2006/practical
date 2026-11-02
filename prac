@@ -1,0 +1,43 @@
+PHP University Practical Programs 
+
+18) a)Write a PHP program to create an array of fruits and display them in a list. 
+
+<?php 
+
+$fruits = array("Apple", "Banana", "Mango", "Orange", "Grapes"); 
+
+echo "<h2>List of Fruits</h2>"; 
+
+echo "<ul>"; 
+
+foreach ($fruits as $fruit) { 
+
+ echo "<li>" . $fruit . "</li>"; 
+
+} 
+
+echo "</ul>"; 
+
+?> 
+
+(b) Extend the program to sort the array in alphabetical order before displaying it. 
+
+<?php 
+
+$fruits = array("Mango", "Apple", "Grapes", "Banana", "Orange"); 
+
+sort($fruits); 
+
+echo "<h2>Fruits in Alphabetical Order</h2>"; 
+
+echo "<ul>"; 
+
+foreach ($fruits as $fruit) { 
+
+ echo "<li>" . $fruit . "</li>"; 
+
+} 
+
+echo "</ul>"; 
+
+?>
